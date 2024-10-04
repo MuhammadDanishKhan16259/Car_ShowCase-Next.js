@@ -69,7 +69,8 @@ export async function fetchCars(filters: FilterProps) {
   const { manufacturer, year, model, limit, fuel } = filters;
 
   const headers = {
-    "x-rapidapi-key": "594cedc1c4mshffac66889c548b8p16e2b5jsn72a421a26ed8",
+    // "x-rapidapi-key": "594cedc1c4mshffac66889c548b8p16e2b5jsn72a421a26ed8",
+    "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API_KEY || "",
     "x-rapidapi-host": "cars-by-api-ninjas.p.rapidapi.com",
   };
   //   const url = "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla";
